@@ -1,0 +1,7 @@
+D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\ClientApp\bin\Debug\ClientApp.exe.config
+D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\ClientApp\bin\Debug\ClientApp.exe
+D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\ClientApp\bin\Debug\ClientApp.pdb
+D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\ClientApp\obj\Debug\ClientApp.csproj.CoreCompileInputs.cache
+D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\ClientApp\obj\Debug\ClientApp.exe
+D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\ClientApp\obj\Debug\ClientApp.pdb
+D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\ClientApp\obj\Debug\ClientApp.csprojAssemblyReference.cache
