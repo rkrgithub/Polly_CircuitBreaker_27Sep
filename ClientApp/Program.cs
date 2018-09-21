@@ -43,7 +43,8 @@ namespace ClientApp
                 Console.WriteLine("'" + url + "' api is calling " + number_of_calls + " times");
                 for (int i = 0; i < Convert.ToInt32(number_of_calls); i++)
                 {
-                    Console.WriteLine("\r\n" + GetAsync(url).Result);
+                    var res = GetAsync(url).Result;
+                    Console.WriteLine("\r\n" + res);
                 }
             }
             catch (Exception ex)
