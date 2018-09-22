@@ -14,27 +14,22 @@ namespace Client_API.Controllers
         [HttpGet]
         public async Task<HttpResponseMessage> Get()
         {
-            HttpResponseMessage response = null;
-            using (var client = new HttpClient() { Timeout = TimeSpan.FromSeconds(5)})
-            {
-                client.DefaultRequestHeaders.Accept.Clear();
-                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-                response = await client.GetAsync(new Uri("http://localhost:52892/api/products/Getproducts"));
-                if (!response.IsSuccessStatusCode)
-                {
-                    return new HttpResponseMessage(response.StatusCode);
-                }
-            }
-            return response;
+            return await ServiceCall(new Uri($"http://localhost:52892/api/products/GetProducts"));
         }
 
         [HttpGet]
         public async Task<HttpResponseMessage> GetwithDelay(int delay = 0)
         {
-            return await ServiceCall(delay);
+            return await ServiceCall(new Uri($"http://localhost:52892/api/products/GetdelayedProducts?delay={delay}"));
         }
 
-        private static async Task<HttpResponseMessage> ServiceCall(int delay)
+        [HttpGet]
+        public async Task<HttpResponseMessage> GetException()
+        {
+            return await ServiceCall(new Uri($"http://localhost:52892/api/products/GetException"));
+        }
+
+        private static async Task<HttpResponseMessage> ServiceCall(Uri uri)
         {
             HttpResponseMessage response = null;
             try
@@ -43,7 +38,7 @@ namespace Client_API.Controllers
                 {
                     client.DefaultRequestHeaders.Accept.Clear();
                     client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-                    response = await client.GetAsync(new Uri($"http://localhost:52892/api/products/GetdelayedProducts?delay={delay}"));
+                    response = await client.GetAsync(uri);
                     if (!response.IsSuccessStatusCode)
                     {
                         return new HttpResponseMessage(response.StatusCode);
@@ -57,21 +52,6 @@ namespace Client_API.Controllers
             return response;
         }
 
-        [HttpGet]
-        public async Task<HttpResponseMessage> GetException()
-        {
-            HttpResponseMessage response = null;
-            using (var client = new HttpClient() { Timeout = TimeSpan.FromSeconds(5) })
-            {
-                client.DefaultRequestHeaders.Accept.Clear();
-                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-                response = await client.GetAsync(new Uri($"http://localhost:52892/api/products/GetException"));
-                if (!response.IsSuccessStatusCode)
-                {
-                    return new HttpResponseMessage(response.StatusCode);
-                }
-            }
-            return response;
-        }
+        
     }
 }
