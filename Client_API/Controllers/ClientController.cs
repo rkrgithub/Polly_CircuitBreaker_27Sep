@@ -21,11 +21,19 @@ namespace Client_API.Controllers
         [HttpGet]
         public async Task<string> GetwithDelay(int delay = 0)
         {
+            Action<Exception, TimeSpan> onBreak = (exception, timespan) => {
+                Console.WriteLine("On Break");
+            };
+            Action onReset = () => {
+                Console.WriteLine("On Reset");
+            };
             var circuitBreaker = Policy
                                 .Handle<Exception>()
                                 .CircuitBreakerAsync(
-                                    exceptionsAllowedBeforeBreaking: 2,
-                                    durationOfBreak: TimeSpan.FromMinutes(1)
+                                    exceptionsAllowedBeforeBreaking: 1,
+                                    durationOfBreak: TimeSpan.FromMinutes(1),
+                                    onBreak : onBreak,
+                                    onReset : onReset
                                 );
 
             HttpResponseMessage res = null;
