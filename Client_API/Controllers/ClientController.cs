@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Polly;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -18,9 +19,18 @@ namespace Client_API.Controllers
         }
 
         [HttpGet]
-        public async Task<HttpResponseMessage> GetwithDelay(int delay = 0)
+        public async Task<string> GetwithDelay(int delay = 0)
         {
-            return await ServiceCall(new Uri($"http://localhost:52892/api/products/GetdelayedProducts?delay={delay}"));
+            var circuitBreaker = Policy
+                                .Handle<Exception>()
+                                .CircuitBreakerAsync(
+                                    exceptionsAllowedBeforeBreaking: 2,
+                                    durationOfBreak: TimeSpan.FromMinutes(1)
+                                );
+
+            HttpResponseMessage res = null;
+            await circuitBreaker.ExecuteAsync(async() => res =  await ServiceCall(new Uri($"http://localhost:52892/api/products/GetdelayedProducts?delay={delay}")));
+            return await res.Content.ReadAsStringAsync();
         }
 
         [HttpGet]
@@ -52,6 +62,6 @@ namespace Client_API.Controllers
             return response;
         }
 
-        
+
     }
 }
