@@ -31,6 +31,11 @@ namespace Client_API.Controllers
         [HttpGet]
         public async Task<HttpResponseMessage> GetwithDelay(int delay = 0)
         {
+            return await ServiceCall(delay);
+        }
+
+        private static async Task<HttpResponseMessage> ServiceCall(int delay)
+        {
             HttpResponseMessage response = null;
             try
             {
