@@ -14,7 +14,7 @@ namespace Client_API.Controllers
 {
     public class ClientController : ApiController
     {
-
+        string _baseAddress = "http://localhost:52892/api/products";
         //52892
         static Action<Exception, TimeSpan> onBreak = (exception, timespan) =>
         {
@@ -32,7 +32,7 @@ namespace Client_API.Controllers
                                 .Handle<Exception>()
                                 .CircuitBreakerAsync(
                                     exceptionsAllowedBeforeBreaking: 1,
-                                    durationOfBreak: TimeSpan.FromSeconds(10),
+                                    durationOfBreak: TimeSpan.FromSeconds(30000),
                                     onBreak: onBreak,
                                     onReset: onReset,
                                     onHalfOpen: onHalfOpen
@@ -45,7 +45,7 @@ namespace Client_API.Controllers
             LogMessageToFile("------- Calling Get API ------");
 
             HttpResponseMessage res = null;
-            await circuitBreaker.ExecuteAsync(async () => res = await ServiceCall(new Uri($"http://localhost:8088/api/products/GetProducts")));
+            await circuitBreaker.ExecuteAsync(async () => res = await ServiceCall(new Uri($"{_baseAddress}/GetProducts")));
             return await res.Content.ReadAsStringAsync();
         }
 
@@ -55,7 +55,7 @@ namespace Client_API.Controllers
             LogMessageToFile("------- Calling GetwithDelay API with dalay " + delay + " -----");
 
             HttpResponseMessage res = null;
-            await circuitBreaker.ExecuteAsync(async () => res = await ServiceCall(new Uri($"http://localhost:8088/api/products/GetdelayedProducts?delay={delay}")));
+            await circuitBreaker.ExecuteAsync(async () => res = await ServiceCall(new Uri($"{_baseAddress}/GetdelayedProducts?delay={delay}")));
             return await res.Content.ReadAsStringAsync();
         }
 
@@ -65,7 +65,7 @@ namespace Client_API.Controllers
             LogMessageToFile("------- Calling GetException -----");
 
             HttpResponseMessage res = null;
-            await circuitBreaker.ExecuteAsync(async () => res = await ServiceCall(new Uri($"http://localhost:8088/api/products/GetException")));
+            await circuitBreaker.ExecuteAsync(async () => res = await ServiceCall(new Uri($"{_baseAddress}/GetException")));
             return await res.Content.ReadAsStringAsync();
         }
 

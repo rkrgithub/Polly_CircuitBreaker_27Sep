@@ -8,8 +8,8 @@ D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\Client
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\System.Web.Http.dll
-D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\System.Net.Http.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\Polly.dll
+D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\System.Net.Http.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\System.Web.Http.WebHost.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\System.Net.Http.Formatting.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\Newtonsoft.Json.dll

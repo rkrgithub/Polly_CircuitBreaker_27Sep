@@ -19,18 +19,18 @@ namespace Webapi_delay.Controllers
         {
             #region "For server Load - Searching in all folders in D: drive and reading specified file to get products data"
             //DirectoryInfo folder = new DirectoryInfo(@"D:\");
-            //FileInfo[] files = folder.GetFiles("datafile.txt", SearchOption.AllDirectories);
-            //if (files.Length > 0)
-            //{
-            //    using (StreamReader sr = new StreamReader(files[0].OpenRead()))
-            //    {
-            //        // Read the stream to a string, and write the string to the console.
-            //        String text = sr.ReadToEnd();
-            //        string[] ssss = text?.Split(new string[] { "[data]" }, StringSplitOptions.None);
-            //        JavaScriptSerializer js = new JavaScriptSerializer();
-            //        return js.Deserialize<Product[]>(ssss[1].Replace("\\", string.Empty));
-            //    }
-            //}
+            DirectoryInfo folder = new DirectoryInfo(@"D:\Ascend\svn\POC\");
+            FileInfo[] files = folder.GetFiles("datafile.txt", SearchOption.AllDirectories);
+            if (files.Length > 0)
+            {
+                using (StreamReader sr = new StreamReader(files[0].OpenRead()))
+                {
+                    // Read the stream to a string, and write the string to the console.
+                    String text = sr.ReadToEnd();
+                    JavaScriptSerializer js = new JavaScriptSerializer();
+                    return js.Deserialize<Product[]>(text.Replace("\\", string.Empty));
+                }
+            }
             //return new Product[] { };
             #endregion
 
