@@ -17,21 +17,28 @@ namespace Webapi_delay.Controllers
     {
         private Product[] Products()
         {
-            
+            #region "For server Load - Searching in all folders in D: drive and reading specified file to get products data"
+            //DirectoryInfo folder = new DirectoryInfo(@"D:\");
+            //FileInfo[] files = folder.GetFiles("datafile.txt", SearchOption.AllDirectories);
+            //if (files.Length > 0)
+            //{
+            //    using (StreamReader sr = new StreamReader(files[0].OpenRead()))
+            //    {
+            //        // Read the stream to a string, and write the string to the console.
+            //        String text = sr.ReadToEnd();
+            //        string[] ssss = text?.Split(new string[] { "[data]" }, StringSplitOptions.None);
+            //        JavaScriptSerializer js = new JavaScriptSerializer();
+            //        return js.Deserialize<Product[]>(ssss[1].Replace("\\", string.Empty));
+            //    }
+            //}
+            //return new Product[] { };
+            #endregion
 
-            string text = File.ReadAllText(@"D:\Ascend\svn\POC\datafile.txt");
-            string[] ssss = text.Split(new string[] { "[data]" }, StringSplitOptions.None);
-
-            JavaScriptSerializer js = new JavaScriptSerializer();
-            return js.Deserialize<Product[]>(ssss[1].Replace("\\", string.Empty));
-
-            //return new Product[]();
-
-            //return new Product[] { new Product() { ProductId = 1111, Title = "Fitness Nutrition Specialization (FNS)", Price = 499.00, ReleaseDate = DateTime.Now },
-            //    new Product() { ProductId = 2222, Title = "Weight Loss Specialization (WLS)", Price = 299.00, ReleaseDate = DateTime.Now },
-            //    new Product() { ProductId = 3333, Title = "Behavior Change Specialization (BCS)", Price = 699.00, ReleaseDate = DateTime.Now },
-            //    new Product() { ProductId = 4444, Title = "Group Personal Training Specialization (GPTS)", Price = 549.00, ReleaseDate = DateTime.Now }
-            //};
+            return new Product[] { new Product() { ProductId = 1111, Title = "Fitness Nutrition Specialization (FNS)", Price = 499.00, ReleaseDate = DateTime.Now },
+                new Product() { ProductId = 2222, Title = "Weight Loss Specialization (WLS)", Price = 299.00, ReleaseDate = DateTime.Now },
+                new Product() { ProductId = 3333, Title = "Behavior Change Specialization (BCS)", Price = 699.00, ReleaseDate = DateTime.Now },
+                new Product() { ProductId = 4444, Title = "Group Personal Training Specialization (GPTS)", Price = 549.00, ReleaseDate = DateTime.Now }
+            };
         }
 
         /// <summary>
@@ -42,7 +49,6 @@ namespace Webapi_delay.Controllers
         [HttpGet]
         public IEnumerable<Product> GetdelayedProducts(int delay = 5000)
         {
-
             System.Threading.Thread.Sleep(delay);
             return Products();
         }
@@ -64,7 +70,6 @@ namespace Webapi_delay.Controllers
         [HttpGet]
         public Product GetException()
         {
-            //throw new HttpResponseException(HttpStatusCode.NotFound);
             throw new HttpResponseException(Request.CreateErrorResponse(HttpStatusCode.NotFound, "Throwing exception"));
         }
     }

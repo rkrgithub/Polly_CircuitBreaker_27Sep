@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -12,6 +13,9 @@ namespace Client_API
         protected void Application_Start()
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
+
+            if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "My Log File.txt"))
+                File.Delete(AppDomain.CurrentDomain.BaseDirectory + "My Log File.txt");
         }
     }
 }
