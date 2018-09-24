@@ -17,22 +17,21 @@ namespace Webapi_delay.Controllers
     {
         private Product[] Products()
         {
-            #region "For server Load - Searching in all folders in D: drive and reading specified file to get products data"
+            //#region "For server Load - Searching in all folders in D: drive and reading specified file to get products data"
             //DirectoryInfo folder = new DirectoryInfo(@"D:\");
-            DirectoryInfo folder = new DirectoryInfo(@"D:\Ascend\svn\POC\");
-            FileInfo[] files = folder.GetFiles("datafile.txt", SearchOption.AllDirectories);
-            if (files.Length > 0)
-            {
-                using (StreamReader sr = new StreamReader(files[0].OpenRead()))
-                {
-                    // Read the stream to a string, and write the string to the console.
-                    String text = sr.ReadToEnd();
-                    JavaScriptSerializer js = new JavaScriptSerializer();
-                    return js.Deserialize<Product[]>(text.Replace("\\", string.Empty));
-                }
-            }
-            //return new Product[] { };
-            #endregion
+            //FileInfo[] files = folder.GetFiles("datafile.txt", SearchOption.AllDirectories);
+            //if (files.Length > 0)
+            //{
+            //    using (StreamReader sr = new StreamReader(files[0].OpenRead()))
+            //    {
+            //        // Read the stream to a string, and write the string to the console.
+            //        String text = sr.ReadToEnd();
+            //        JavaScriptSerializer js = new JavaScriptSerializer();
+            //        return js.Deserialize<Product[]>(text.Replace("\\", string.Empty));
+            //    }
+            //}
+            ////return new Product[] { };
+            //#endregion
 
             return new Product[] { new Product() { ProductId = 1111, Title = "Fitness Nutrition Specialization (FNS)", Price = 499.00, ReleaseDate = DateTime.Now },
                 new Product() { ProductId = 2222, Title = "Weight Loss Specialization (WLS)", Price = 299.00, ReleaseDate = DateTime.Now },

@@ -14,7 +14,7 @@ namespace Client_API.Controllers
 {
     public class ClientController : ApiController
     {
-        string _baseAddress = "http://localhost:52892/api/products";
+        string _baseAddress = "http://localhost:8088/api/products";
         //52892
         static Action<Exception, TimeSpan> onBreak = (exception, timespan) =>
         {
@@ -32,7 +32,7 @@ namespace Client_API.Controllers
                                 .Handle<Exception>()
                                 .CircuitBreakerAsync(
                                     exceptionsAllowedBeforeBreaking: 1,
-                                    durationOfBreak: TimeSpan.FromSeconds(30000),
+                                    durationOfBreak: TimeSpan.FromSeconds(20),
                                     onBreak: onBreak,
                                     onReset: onReset,
                                     onHalfOpen: onHalfOpen
