@@ -14,8 +14,16 @@ namespace Client_API
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
 
+            GlobalConfiguration.Configuration.Formatters.JsonFormatter.MediaTypeMappings
+.Add(new System.Net.Http.Formatting.RequestHeaderMapping("Accept",
+                              "text/html",
+                              StringComparison.InvariantCultureIgnoreCase,
+                              true,
+                              "application/json"));
+
             if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "My Log File.txt"))
                 File.Delete(AppDomain.CurrentDomain.BaseDirectory + "My Log File.txt");
         }
+
     }
 }

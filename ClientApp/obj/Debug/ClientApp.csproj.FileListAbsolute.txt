@@ -100,7 +100,6 @@ D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\ClientApp\bin\Debug\System.Xml.XP
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\ClientApp\bin\Debug\Polly.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\ClientApp\bin\Debug\Polly.pdb
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\ClientApp\bin\Debug\Polly.xml
-D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\ClientApp\obj\Debug\ClientApp.csprojAssemblyReference.cache
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\ClientApp\obj\Debug\ClientApp.exe.config
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\ClientApp\obj\Debug\ClientApp.csproj.CoreCompileInputs.cache
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\ClientApp\obj\Debug\ClientApp.csproj.CopyComplete

@@ -162,4 +162,3 @@ D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Webapi_delay\obj\Debug\Webapi_del
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Webapi_delay\obj\Debug\Webapi_delay.csproj.CopyComplete
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Webapi_delay\obj\Debug\Webapi_delay.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Webapi_delay\obj\Debug\Webapi_delay.pdb
-D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Webapi_delay\obj\Debug\Webapi_delay.csprojAssemblyReference.cache

@@ -15,27 +15,25 @@ namespace Client_API.Controllers
     public class ClientController : ApiController
     {
         string _baseAddress = "http://localhost:8088/api/products";
+        static TimeSpan _durationOfBreak = TimeSpan.FromSeconds(20);
         //52892
-        static Action<Exception, TimeSpan> onBreak = (exception, timespan) =>
-        {
-            LogMessageToFile("On Break, time span : " + timespan.ToString());
-        };
-        static Action onReset = () =>
-        {
-            LogMessageToFile("On Reset");
-        };
-        static Action onHalfOpen = () =>
-        {
-            LogMessageToFile("on HalfOpen");
-        };
-        static CircuitBreakerPolicy circuitBreaker = Policy
+        static CircuitBreakerPolicy _circuitBreaker = Policy
                                 .Handle<Exception>()
                                 .CircuitBreakerAsync(
                                     exceptionsAllowedBeforeBreaking: 1,
-                                    durationOfBreak: TimeSpan.FromSeconds(20),
-                                    onBreak: onBreak,
-                                    onReset: onReset,
-                                    onHalfOpen: onHalfOpen
+                                    durationOfBreak: _durationOfBreak,
+                                    onBreak: (exception, timespan) =>
+                                    {
+                                        LogMessageToFile("On Break, time span : " + timespan.ToString());
+                                    },
+                                    onReset: () =>
+                                    {
+                                        LogMessageToFile("On Reset");
+                                    },
+                                    onHalfOpen: () =>
+                                    {
+                                        LogMessageToFile("on HalfOpen");
+                                    }
                                 );
 
 
@@ -43,10 +41,16 @@ namespace Client_API.Controllers
         public async Task<string> Get()
         {
             LogMessageToFile("------- Calling Get API ------");
-
             HttpResponseMessage res = null;
-            await circuitBreaker.ExecuteAsync(async () => res = await ServiceCall(new Uri($"{_baseAddress}/GetProducts")));
-            return await res.Content.ReadAsStringAsync();
+            try
+            {
+                await _circuitBreaker.ExecuteAsync(async () => res = await ServiceCall(new Uri($"{_baseAddress}/GetProducts")));
+                return await res.Content.ReadAsStringAsync();
+            }
+            catch (BrokenCircuitException)
+            {
+                return $"Circuit breaker is in OPEN state. Please try again after {_durationOfBreak.Seconds} seconds";
+            }
         }
 
         [HttpGet]
@@ -54,19 +58,32 @@ namespace Client_API.Controllers
         {
             LogMessageToFile("------- Calling GetwithDelay API with dalay " + delay + " -----");
 
-            HttpResponseMessage res = null;
-            await circuitBreaker.ExecuteAsync(async () => res = await ServiceCall(new Uri($"{_baseAddress}/GetdelayedProducts?delay={delay}")));
-            return await res.Content.ReadAsStringAsync();
+            try
+            {
+                HttpResponseMessage res = null;
+                await _circuitBreaker.ExecuteAsync(async () => res = await ServiceCall(new Uri($"{_baseAddress}/GetdelayedProducts?delay={delay}")));
+                return await res.Content.ReadAsStringAsync();
+            }
+            catch (BrokenCircuitException)
+            {
+                return $"Circuit breaker is in OPEN state. Please try again after {_durationOfBreak.Seconds} seconds";
+            }
         }
 
         [HttpGet]
         public async Task<string> GetException()
         {
             LogMessageToFile("------- Calling GetException -----");
-
-            HttpResponseMessage res = null;
-            await circuitBreaker.ExecuteAsync(async () => res = await ServiceCall(new Uri($"{_baseAddress}/GetException")));
-            return await res.Content.ReadAsStringAsync();
+            try
+            {
+                HttpResponseMessage res = null;
+                await _circuitBreaker.ExecuteAsync(async () => res = await ServiceCall(new Uri($"{_baseAddress}/GetException")));
+                return await res.Content.ReadAsStringAsync();
+            }
+            catch (BrokenCircuitException)
+            {
+                return $"Circuit breaker is in OPEN state. Please try again after {_durationOfBreak.Seconds} seconds";
+            }
         }
 
         private static async Task<HttpResponseMessage> ServiceCall(Uri uri)

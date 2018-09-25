@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Web.Http;
 
 namespace Client_API
@@ -11,6 +12,7 @@ namespace Client_API
         {
             // Web API configuration and services
 
+            
             // Web API routes
             config.MapHttpAttributeRoutes();
 
@@ -19,6 +21,7 @@ namespace Client_API
                 routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
         }
     }
 }

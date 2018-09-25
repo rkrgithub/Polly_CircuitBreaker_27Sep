@@ -1,60 +1,94 @@
-9/25/2018 12:14:27 AM: ------- Calling Get API ------.
-9/25/2018 12:14:27 AM: Executing Http Call.
-9/25/2018 12:14:32 AM: On Break, time span : 00:00:20.
-9/25/2018 12:14:32 AM: ------- Calling Get API ------.
-9/25/2018 12:14:36 AM: ------- Calling Get API ------.
-9/25/2018 12:14:54 AM: ------- Calling Get API ------.
-9/25/2018 12:14:54 AM: on HalfOpen.
-9/25/2018 12:14:54 AM: Executing Http Call.
-9/25/2018 12:14:55 AM: On Reset.
-9/25/2018 12:14:56 AM: ------- Calling Get API ------.
-9/25/2018 12:14:56 AM: Executing Http Call.
-9/25/2018 12:14:57 AM: ------- Calling Get API ------.
-9/25/2018 12:14:57 AM: Executing Http Call.
-9/25/2018 12:14:58 AM: ------- Calling Get API ------.
-9/25/2018 12:14:58 AM: Executing Http Call.
-9/25/2018 12:14:59 AM: ------- Calling Get API ------.
-9/25/2018 12:14:59 AM: Executing Http Call.
-9/25/2018 12:15:08 AM: ------- Calling Get API ------.
-9/25/2018 12:15:08 AM: Executing Http Call.
-9/25/2018 12:15:12 AM: On Break, time span : 00:00:20.
-9/25/2018 12:15:16 AM: ------- Calling Get API ------.
-9/25/2018 12:15:19 AM: ------- Calling Get API ------.
-9/25/2018 12:15:20 AM: ------- Calling Get API ------.
-9/25/2018 12:15:24 AM: ------- Calling Get API ------.
-9/25/2018 12:15:26 AM: ------- Calling Get API ------.
-9/25/2018 12:15:29 AM: ------- Calling Get API ------.
-9/25/2018 12:15:31 AM: ------- Calling Get API ------.
-9/25/2018 12:15:33 AM: ------- Calling Get API ------.
-9/25/2018 12:15:33 AM: on HalfOpen.
-9/25/2018 12:15:33 AM: Executing Http Call.
-9/25/2018 12:15:35 AM: On Break, time span : 00:00:20.
-9/25/2018 12:15:38 AM: ------- Calling Get API ------.
-9/25/2018 12:15:40 AM: ------- Calling Get API ------.
-9/25/2018 12:15:43 AM: ------- Calling Get API ------.
-9/25/2018 12:15:44 AM: ------- Calling Get API ------.
-9/25/2018 12:15:50 AM: ------- Calling Get API ------.
-9/25/2018 12:16:00 AM: ------- Calling Get API ------.
-9/25/2018 12:16:00 AM: on HalfOpen.
-9/25/2018 12:16:00 AM: Executing Http Call.
-9/25/2018 12:16:00 AM: On Reset.
-9/25/2018 12:16:03 AM: ------- Calling Get API ------.
-9/25/2018 12:16:03 AM: Executing Http Call.
-9/25/2018 12:16:05 AM: ------- Calling Get API ------.
-9/25/2018 12:16:05 AM: Executing Http Call.
-9/25/2018 12:16:11 AM: ------- Calling Get API ------.
-9/25/2018 12:16:11 AM: Executing Http Call.
-9/25/2018 12:16:16 AM: On Break, time span : 00:00:20.
-9/25/2018 12:16:17 AM: ------- Calling Get API ------.
-9/25/2018 12:16:19 AM: ------- Calling Get API ------.
-9/25/2018 12:16:25 AM: ------- Calling Get API ------.
-9/25/2018 12:16:27 AM: ------- Calling Get API ------.
-9/25/2018 12:16:29 AM: ------- Calling Get API ------.
-9/25/2018 12:16:32 AM: ------- Calling Get API ------.
-9/25/2018 12:16:34 AM: ------- Calling Get API ------.
-9/25/2018 12:16:36 AM: ------- Calling Get API ------.
-9/25/2018 12:16:36 AM: on HalfOpen.
-9/25/2018 12:16:36 AM: Executing Http Call.
-9/25/2018 12:16:37 AM: On Reset.
-9/25/2018 12:16:38 AM: ------- Calling Get API ------.
-9/25/2018 12:16:38 AM: Executing Http Call.
+9/25/2018 7:58:37 PM: ------- Calling Get API ------.
+9/25/2018 7:58:37 PM: Executing Http Call.
+9/25/2018 7:58:39 PM: On Break, time span : 00:00:20.
+9/25/2018 7:58:50 PM: ------- Calling Get API ------.
+9/25/2018 7:58:58 PM: ------- Calling Get API ------.
+9/25/2018 7:59:00 PM: ------- Calling Get API ------.
+9/25/2018 7:59:00 PM: on HalfOpen.
+9/25/2018 7:59:00 PM: Executing Http Call.
+9/25/2018 7:59:01 PM: On Reset.
+9/25/2018 7:59:05 PM: ------- Calling Get API ------.
+9/25/2018 7:59:05 PM: Executing Http Call.
+9/25/2018 7:59:06 PM: ------- Calling Get API ------.
+9/25/2018 7:59:06 PM: Executing Http Call.
+9/25/2018 7:59:07 PM: ------- Calling Get API ------.
+9/25/2018 7:59:07 PM: Executing Http Call.
+9/25/2018 7:59:11 PM: ------- Calling GetwithDelay API with dalay 4000 -----.
+9/25/2018 7:59:11 PM: Executing Http Call.
+9/25/2018 7:59:18 PM: ------- Calling GetwithDelay API with dalay 4000 -----.
+9/25/2018 7:59:18 PM: Executing Http Call.
+9/25/2018 7:59:25 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:25 PM: Executing Http Call.
+9/25/2018 7:59:30 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:30 PM: Executing Http Call.
+9/25/2018 7:59:30 PM: On Break, time span : 00:00:20.
+9/25/2018 7:59:36 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:38 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:39 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:40 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:42 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:43 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:45 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:46 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:46 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:47 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:48 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:49 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:50 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:51 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:51 PM: on HalfOpen.
+9/25/2018 7:59:51 PM: Executing Http Call.
+9/25/2018 7:59:56 PM: On Break, time span : 00:00:20.
+9/25/2018 7:59:56 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:57 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:59 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 7:59:59 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:00 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:01 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:01 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:02 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:02 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:02 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:03 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:03 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:03 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:03 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:04 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:04 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:04 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:05 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:06 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:07 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:08 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:08 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:09 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:10 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:11 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:11 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:12 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:13 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:14 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:15 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:15 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:16 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:16 PM: on HalfOpen.
+9/25/2018 8:00:16 PM: Executing Http Call.
+9/25/2018 8:00:18 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:19 PM: ------- Calling GetwithDelay API with dalay 6000 -----.
+9/25/2018 8:00:21 PM: On Break, time span : 00:00:20.
+9/25/2018 8:00:22 PM: ------- Calling GetwithDelay API with dalay 5000 -----.
+9/25/2018 8:00:25 PM: ------- Calling GetwithDelay API with dalay 5000 -----.
+9/25/2018 8:00:29 PM: ------- Calling GetwithDelay API with dalay 4500 -----.
+9/25/2018 8:00:31 PM: ------- Calling GetwithDelay API with dalay 4500 -----.
+9/25/2018 8:00:32 PM: ------- Calling GetwithDelay API with dalay 4500 -----.
+9/25/2018 8:00:33 PM: ------- Calling GetwithDelay API with dalay 4500 -----.
+9/25/2018 8:00:35 PM: ------- Calling GetwithDelay API with dalay 4500 -----.
+9/25/2018 8:00:36 PM: ------- Calling GetwithDelay API with dalay 4500 -----.
+9/25/2018 8:00:37 PM: ------- Calling GetwithDelay API with dalay 4500 -----.
+9/25/2018 8:00:38 PM: ------- Calling GetwithDelay API with dalay 4500 -----.
+9/25/2018 8:00:39 PM: ------- Calling GetwithDelay API with dalay 4500 -----.
+9/25/2018 8:00:41 PM: ------- Calling GetwithDelay API with dalay 4500 -----.
+9/25/2018 8:00:42 PM: ------- Calling GetwithDelay API with dalay 4500 -----.
+9/25/2018 8:00:42 PM: on HalfOpen.
+9/25/2018 8:00:42 PM: Executing Http Call.
+9/25/2018 8:00:47 PM: On Reset.
