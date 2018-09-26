@@ -7,8 +7,8 @@ D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Webapi_delay.Tests\bin\Debug\Micr
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Webapi_delay.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Webapi_delay.Tests\bin\Debug\Webapi_delay.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Webapi_delay.Tests\bin\Debug\System.Web.Http.dll
-D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Webapi_delay.Tests\bin\Debug\System.Web.Http.WebHost.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Webapi_delay.Tests\bin\Debug\System.Net.Http.dll
+D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Webapi_delay.Tests\bin\Debug\System.Web.Http.WebHost.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Webapi_delay.Tests\bin\Debug\System.Net.Http.Formatting.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Webapi_delay.Tests\bin\Debug\Newtonsoft.Json.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Webapi_delay.Tests\bin\Debug\Webapi_delay.pdb

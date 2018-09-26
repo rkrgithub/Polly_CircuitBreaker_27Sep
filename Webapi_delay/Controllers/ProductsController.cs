@@ -67,9 +67,21 @@ namespace Webapi_delay.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public Product GetException()
+        public HttpResponseMessage GetException()
         {
-            throw new HttpResponseException(Request.CreateErrorResponse(HttpStatusCode.NotFound, "Throwing exception"));
+            Product[] res = null;
+            try
+            {
+                int a = 1;
+                int g = a / 0;
+                res = Products();
+            }
+            catch (Exception)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, "Exception occured");
+            }
+            return Request.CreateResponse(HttpStatusCode.OK, res); ;
+
         }
     }
 }

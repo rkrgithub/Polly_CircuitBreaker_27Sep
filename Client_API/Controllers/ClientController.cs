@@ -41,11 +41,12 @@ namespace Client_API.Controllers
         public async Task<string> Get()
         {
             LogMessageToFile("------- Calling Get API ------");
-            HttpResponseMessage res = null;
             try
             {
-                await _circuitBreaker.ExecuteAsync(async () => res = await ServiceCall(new Uri($"{_baseAddress}/GetProducts")));
-                return await res.Content.ReadAsStringAsync();
+                return await _circuitBreaker.ExecuteAsync(async () => {
+                    HttpResponseMessage res = await ServiceCall(new Uri($"{_baseAddress}/GetProducts"));
+                    return await res.Content?.ReadAsStringAsync();
+                });
             }
             catch (BrokenCircuitException)
             {
@@ -60,9 +61,10 @@ namespace Client_API.Controllers
 
             try
             {
-                HttpResponseMessage res = null;
-                await _circuitBreaker.ExecuteAsync(async () => res = await ServiceCall(new Uri($"{_baseAddress}/GetdelayedProducts?delay={delay}")));
-                return await res.Content.ReadAsStringAsync();
+                return await _circuitBreaker.ExecuteAsync(async () => {
+                    HttpResponseMessage res = await ServiceCall(new Uri($"{_baseAddress}/GetdelayedProducts?delay={delay}"));
+                    return await res.Content?.ReadAsStringAsync();
+                });
             }
             catch (BrokenCircuitException)
             {
@@ -76,9 +78,11 @@ namespace Client_API.Controllers
             LogMessageToFile("------- Calling GetException -----");
             try
             {
-                HttpResponseMessage res = null;
-                await _circuitBreaker.ExecuteAsync(async () => res = await ServiceCall(new Uri($"{_baseAddress}/GetException")));
-                return await res.Content.ReadAsStringAsync();
+                //HttpResponseMessage res = null;
+                return await _circuitBreaker.ExecuteAsync(async () => {
+                    HttpResponseMessage res = await ServiceCall(new Uri($"{_baseAddress}/GetException"));
+                    return await res.Content?.ReadAsStringAsync();
+                });
             }
             catch (BrokenCircuitException)
             {

@@ -10,8 +10,8 @@ D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\Micros
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\System.Web.Http.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\Polly.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\System.Net.Http.dll
-D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\System.Net.Http.Formatting.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\System.Web.Http.WebHost.dll
+D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\System.Net.Http.Formatting.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\Newtonsoft.Json.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\netstandard.dll
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\Client_API.pdb
@@ -21,8 +21,8 @@ D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\Micros
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\System.Web.Http.xml
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\Polly.pdb
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\Polly.xml
-D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\System.Net.Http.Formatting.xml
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\System.Web.Http.WebHost.xml
+D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\bin\Debug\System.Net.Http.Formatting.xml
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\obj\Debug\Client_API.Tests.csprojAssemblyReference.cache
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\obj\Debug\Client_API.Tests.csproj.CoreCompileInputs.cache
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API.Tests\obj\Debug\Client_API.Tests.csproj.CopyComplete
