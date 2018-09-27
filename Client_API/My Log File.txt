@@ -1,2 +1,31 @@
-9/26/2018 5:42:43 PM: ------- Calling Get API ------.
-9/26/2018 5:42:43 PM: Executing Http Call.
+9/27/2018 1:27:36 PM: ------- Calling GetException -----.
+9/27/2018 1:27:36 PM: Executing Http Call.
+9/27/2018 1:27:37 PM: On Break, time span : 00:00:10.
+9/27/2018 1:28:26 PM: ------- Calling GetException -----.
+9/27/2018 1:28:26 PM: on HalfOpen.
+9/27/2018 1:28:26 PM: Executing Http Call.
+9/27/2018 1:28:26 PM: On Break, time span : 00:00:10.
+9/27/2018 1:28:31 PM: ------- Calling GetException -----.
+9/27/2018 1:28:39 PM: ------- Calling GetException -----.
+9/27/2018 1:28:39 PM: on HalfOpen.
+9/27/2018 1:28:39 PM: Executing Http Call.
+9/27/2018 1:28:39 PM: On Break, time span : 00:00:10.
+9/27/2018 1:28:41 PM: ------- Calling GetException -----.
+9/27/2018 1:28:42 PM: ------- Calling GetException -----.
+9/27/2018 1:28:43 PM: ------- Calling GetException -----.
+9/27/2018 1:28:44 PM: ------- Calling GetException -----.
+9/27/2018 1:28:44 PM: ------- Calling GetException -----.
+9/27/2018 1:28:45 PM: ------- Calling GetException -----.
+9/27/2018 1:28:45 PM: ------- Calling GetException -----.
+9/27/2018 1:28:46 PM: ------- Calling GetException -----.
+9/27/2018 1:28:47 PM: ------- Calling GetException -----.
+9/27/2018 1:28:47 PM: ------- Calling GetException -----.
+9/27/2018 1:28:48 PM: ------- Calling GetException -----.
+9/27/2018 1:28:48 PM: ------- Calling GetException -----.
+9/27/2018 1:28:49 PM: ------- Calling GetException -----.
+9/27/2018 1:28:50 PM: ------- Calling GetException -----.
+9/27/2018 1:28:50 PM: on HalfOpen.
+9/27/2018 1:28:50 PM: Executing Http Call.
+9/27/2018 1:28:50 PM: On Break, time span : 00:00:10.
+9/27/2018 1:28:50 PM: ------- Calling GetException -----.
+9/27/2018 1:28:51 PM: ------- Calling GetException -----.

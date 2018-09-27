@@ -78,7 +78,7 @@ namespace Webapi_delay.Controllers
             }
             catch (Exception)
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, "Exception occured");
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, "My custom error message");
             }
             return Request.CreateResponse(HttpStatusCode.OK, res); ;
 

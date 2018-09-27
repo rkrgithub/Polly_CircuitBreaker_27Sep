@@ -158,7 +158,6 @@ D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API\bin\System.Net.Http.Fo
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API\bin\System.Web.Http.xml
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API\bin\System.Web.Http.WebHost.xml
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API\obj\Debug\Client_API.csprojAssemblyReference.cache
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API\obj\Debug\Client_API.csproj.CoreCompileInputs.cache
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API\obj\Debug\Client_API.csproj.CopyComplete
 D:\Ascend\svn\POC\Circuit breaker\Webapi_delay\Client_API\obj\Debug\Client_API.dll
